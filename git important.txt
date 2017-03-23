@@ -1,0 +1,10 @@
+git understanding-------------------------------------------------------------
+
+1. create new repositary for new repo...
+2. open "git bash here" usnig Right click (where you want your data to be store.).
+3. check your repo edited or not using (git init & Git status).
+4. if your repo edited you need to write this command (git add . ).
+5. check your repo added or not using ( Git status).
+6. Write this command for commit your updated repo (git commit -m "Your Message here").
+7. Push data on git server using this command (git push -u origin master).
+8. Pull request for uadted folder on git server using this command (git pull or git pull -u origin master)..
