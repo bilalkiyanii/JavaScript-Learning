@@ -8,3 +8,11 @@ git understanding-------------------------------------------------------------
 6. Write this command for commit your updated repo (git commit -m "Your Message here").
 7. Push data on git server using this command (git push -u origin master).
 8. Pull request for uadted folder on git server using this command (git pull or git pull -u origin master)..
+
+
+git status
+git add .
+git status
+git commit -m "your message"
+git push -u origin master 
+user name bilalkiyanii
