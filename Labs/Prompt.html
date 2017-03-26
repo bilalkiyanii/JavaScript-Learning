@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <meta charset="UTF-8">
+    <title>Local storage</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!--<script src="dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">-->
+</head>
+<body>
+    <div class="container-flex navbar header-box col-md-12 text-center">
+        <h2 class="heading">JavaScript</h2>
+        <h2 class="heading1" id="top">Important Questions & Answers</h2>
+    </div>
+    <!--<div class="col-md-12 up-button">
+        <a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    </div>-->
+    <div class="container">
+        <div class="col-md-12">
+            <ul>
+                <li><a href="index.html">1</a></li>
+                <li><a href="numbers.html">2</a></li>
+                <li><a href="legal & illegal.html">3</a></li>
+                <li><a href="math.html">4</a></li>
+                <li><a href="prompt.html">5</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container box-0">
+        <div class="col-md-12 text-center">
+            <h2>CONCATENATING TEXT STRINGS, PROMPTS & IF STATEMENTS</h2>
+        </div>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.1:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that takes input a name from user & greet the
+                        user like this:</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">
+                                                    var userName = prompt("Please enter your name");<br/>
+                                                    alert("Hi, " + userName);<br/>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>   
+         <section>
+            <div class="class" id="feedback">
+                <h3>Q.2:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to take input a number from user & display
+                        it’s multiplication table on your browser. If user does not enter
+                        a new number, multiplication table of 5 should be displayed by
+                        default.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">
+                                            var userInput = prompt("Please enter a number for required table", "5");<br/>
+                                            for (i = 1; i<=10; i++){<br/>
+                                            var a = userInput * i;<br/>
+                                            document.write(userInput + " x " + i + " = " + a);<br/>
+                                            }<br/>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>         
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.3:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to take “city” name as input from user. If user
+                        enters “Karachi”, welcome the user like this: “Welcome to city of lights”</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                            var user = prompt("Please enter your city name", "city");<br/>
+                                            if (user === "karachi"){<br/>
+                                                alert("Welcome to city of lights");<br/>
+                                            }else{<br/>
+                                                alert("not in list");<br/>
+                                            }<br/>
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.4:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to take “gender” as input from user. If the
+                        user is male, give the message: Good Morning Sir. If the user is
+                        female, give the message: Good Morning Ma’am.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                            var gender = prompt("Please write your gender");<br/>
+                                            if (gender === "male"){<br/>
+                                                alert("Good Morning Sir");<br/>
+                                            }else if(gender === "female"){<br/>
+                                                alert("Good Morning Ma'am");<br/>
+                                            }else {<br/>
+                                                alert("Please enter correct gender");<br/>
+                                            }<br/>
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.5:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to take input color of road traffic signal from
+                        the user & show the message according to this table:</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                            var user = prompt("Please input traffic signal color");<br/>
+                                            if (user === "red"){<br/>
+                                                document.write("Vehicles must stop");<br/>
+                                            }else if (user === "yellow"){<br/>
+                                                document.write("Vehicles should get ready to move");<br/>
+                                            }else if (user === "green"){<br/>
+                                                document.write("Vehicles can move now");<br/>
+                                            }else{<br/>
+                                                document.write("something wrongnot in list");<br/>
+                                            }<br/>
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.6:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to take input max age & current age from
+                        user. If the current age is less than or equal to max age, show the message “You are welcome”</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                            var currentAge = prompt("Please enter your current age");<br/>
+                                            var maxAge = prompt("Please enter your max age");<br/>
+                                            if (currentAge <= maxAge){<br/>
+                                                alert("You are welcome");<br/>
+                                            }else{<br/>
+                                                alert("Better luck for next time");<br/>
+                                            }<br/>
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.7:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to take input remaining fuel in car (in litres)
+                        from user. If the current fuel is less than 0.25litres, show the
+                        message “Please refill the fuel in your car”</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                            var fuel = prompt("Please input remaining fuel in car", "in litres");<br/>
+                                            if (fuel < "0.25 litres"){<br/>
+                                                alert("Please refill the fuel in your car");<br/>
+                                            }else{<br/>
+                                                alert("Everything is OK");<br/>
+                                            }<br/>
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+         <section>
+            <div class="class" id="feedback">
+                <h3>Q.8:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p></p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                            
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.9:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to take input the marks obtained in three
+                        subjects & total marks. Compute & show the resulting
+                        percentage on your page. Take percentage & compute grade as
+                        per following table:
+                        Show the total marks, marks obtained, percentage, grade &
+                        remarks like:</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                            var totalMarks = prompt("Please enter your total marks", "Total Marks");<br/>
+                                            var obtMarks = prompt("Please enter your obtain marks", "Obtained Marks");<br/>
+                                            var percentage = (obtMarks / totalMarks) * 100;<br/>
+                                            if (obtMarks < totalMarks && obtMarks >= 80){<br/>
+                                                alert("Total Marks : " + totalMarks + "\n" + "Marks Obtained : "+ obtMarks + "\n" + 
+                                                "Percentage : " + percentage + "%" + "\n" + "Grade : A-one" + "\n" + "Remarks : Excellent");<br/>
+                                            }else if (obtMarks < totalMarks && obtMarks >= 70){<br/>
+                                                alert("Total Marks : " + totalMarks + "\n" + "Marks Obtained : "+ obtMarks + "\n" + 
+                                                "Percentage : " + percentage + "%" + "\n" + "Grade : A" + "\n" + "Remarks : Good");<br/>
+                                            }else if (obtMarks < totalMarks && obtMarks >= 60){<br/>
+                                                alert("Total Marks : " + totalMarks + "\n" + "Marks Obtained : "+ obtMarks + "\n" + 
+                                                "Percentage : " + percentage + "%" + "\n" + "Grade : B" + "\n" + "Remarks : Yo Need to improve");<br/>
+                                            }else{<br/>
+                                                alert("Sorry you are Fail");<br/>
+                                            }<br/>
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.10:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to implement checkout process of a
+                        shopping cart system for an e-commerce website. Take input
+                        from users, the following:<br/>
+                        a. Name of item1<br/>
+                        b. Name of item2<br/>
+                        c. Price of item 1<br/>
+                        d. Price of item 2<br/>
+                        e. Ordered quantity of item 1<br/>
+                        f. Ordered Quantity of item 2<br/>
+                        g. Shipping charges<br/>
+                        Compute the total cost. If the total cost is above 2000 PKR ,
+                        offer them 10% discount & show the receipt in your browser.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                            var item1 = "Laptop";<br/>
+                                            var price = 15000;<br/>
+                                            var item2 = "LED";<br/>
+                                            var price2 = 35000;<br/>
+                                            var user = prompt("Please enter required quantity of item1", "item1");<br/>
+                                            var user2 = prompt("Please enter required quantity of item2", "item2");<br/>
+                                            var shippingCharges = 250;<br/>
+                                            var cost = user * price;<br/>
+                                            var cost2 = user2 * price2;<br/>
+                                            var total = cost + cost2 + shippingCharges;<br/>
+                                            var discount = (total / 100) * 10;<br/>
+                                            document.write("Price of " + item1 + " is " + price);<br/>
+                                            document.write("Quantity of " + item1 + " is " + user);<br/>
+                                            document.write("Price of " + item2 + " is " + price2);<br/>
+                                            document.write("Quantity of " + item2 + " is " + user2);<br/>
+                                            document.write("Shipping charges is 250");<br/>
+                                            document.write("Total cost of your order is " + total + " PKR");<br/>
+                                            document.write("Discount Price is " + (total - discount) + " PKR");<br/>
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.11:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p><h3>Guess game: </h3>
+                        Store a secret number (ranging from 1 to 10) in a variable.
+                        Prompt user to guess the secret number.<br/>
+                        a. If user guesses the same number, show “Bingo! Correct
+                        answer”.<br/>
+                        b. If the guessed number +1 is the secret number, show
+                        “Close enough to the correct answer”.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                            var num = 6;<br/>
+                                            var user = prompt("Guess number");<br/>
+                                            if (user === "6"){<br/>
+                                                alert("Bingo ! Correct Answer");<br/>
+                                            }else if (user === "5"){<br/>
+                                                alert("Close enough to the correct answer");<br/>
+                                            }else{<br/>
+                                                alert("Sorry Your answer is incorrect");<br/>
+                                            }<br/>
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.12:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to check whether the given number is
+                        divisible by 3. Show the message to the user if the number is
+                        divisible by 3.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var userInput = +prompt("Please enter a number");<br/>
+                                                    var value = userInput % 3;<br/>
+                                                    if (value === 0){<br/>
+                                                        alert("Your given number is divisible by 3");<br/>
+                                                    }else{<br/>
+                                                        alert("Your given number is not divisible by 3");<br/>
+                                                    }<br/>
+            </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.13:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Names & Total scores of two teams are taken as input. Write
+                        a program that shows which team has won the game or show if
+                        there is a tie. (Team A or Team B)</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                        var name = prompt("Enter Team A Name", "Team A");<br/>
+                                        var score = prompt("Enter Team A Score", "Team A");<br/>
+                                        var name2 = prompt("Enter Team B Name", "Team B");<br/>
+                                        var score2 = prompt("Enter Team B Score", "Team B");<br/>
+                                        if (score > score2){<br/>
+                                            alert(name + " Won the match");<br/>
+                                        }else if (score2 > score){<br/>
+                                            alert(name2 + " Won the match");<br/>
+                                        }else{<br/>
+                                            alert("The match is tie");<br/>
+                                        }<br/>
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.14:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Take a string, a number and a Boolean in three variables.
+                        Write a program that checks the type of variables & responds
+                        accordingly. Like :</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var users = prompt("Please enter your text or number");<br/>
+                                                    var tru = 'true';<br/>
+                                                    var fal = 'false';<br/>
+                                                    if(users === tru || users === fal){<br/>
+                                                        alert(users + " is a Boolean");<br/>
+                                                    }<br/>
+                                                    else if(isNaN(users) ){<br/>
+                                                        alert(users + " is a string");<br/>
+                                                    }else if(!isNaN(users)){<br/>
+                                                        alert(users + " is a number");<br/>
+                                                    } else{<br/>
+                                                        alert("did not match");<br/>
+                                                    }<br/>
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.15:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that checks whether the given input is an
+                        even number or an odd number.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var num = +prompt("Please enter your number");<br/>
+                                                    if (num % 2 == 0){<br/>
+                                                        alert("Your given number is even");<br/>
+                                                    }else{<br/>
+                                                        alert("Your given number is odd");<br/>
+                                                    }<br/>
+                                        
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.16:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Weather in Karachi nowadays is too cool, write a program
+                        that takes temperature as input and shows a message based on
+                        following criteria</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                        var a = "It is too hot outside.";<br/>
+                                        var b = "The Weather today is Normal.";<br/>
+                                        var c = "Today’s Weather is cool.";<br/>
+                                        var d = "OMG! Today’s weather is so Cool.";<br/>
+                                        var user = prompt("Enter a temperature");<br/>
+                                        if (user > 40){<br/>
+                                            alert(a);<br/>
+                                        }else if (user > 30){<br/>
+                                            alert(b);<br/>
+                                        }else if (user > 20){<br/>
+                                            alert(c);<br/>
+                                        }else if (user > 10){<br/>
+                                            alert(d);<br/>
+                                        }else{<br/>
+                                            alert("The temperature is too cool");<br/>
+                                        }<br/>
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.17:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to create a calculator for +,-,*, / & % using if
+                        statements. Take the following input:
+                        <ol>
+                            <li>First number</li>
+                            <li>Second number</li>
+                            <li>Operation (+, -, *, /, %)</li>
+                        </ol>
+                        Compute & show the calculated result to user.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                        var a = +prompt("Please enter a number", "1st");<br/>
+                                        var b = +prompt("Please enter a number", "2nd");<br/>
+                                        var add = a + b;<br/>
+                                        var sub = a - b;<br/>
+                                        var mul = a * b;<br/>
+                                        var divide = a / b;<br/>
+                                        var mod = a % b;<br/>
+                                        alert("Addition of " + a + " and " + b + " is: " + add + "\n" 
+                                        +"Subtaction of " + a + " and " + b + " is: " + sub + "\n" + 
+                                        "Multiplication of " + a + " and " + b + " is: " + mul + "\n" + 
+                                        "Dividing of " + a + " and " + b + " is: "+ divide + "\n" + 
+                                        "Modulus of " + a + " and " + b + " is: "+ mod);<br/>
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.18:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that takes user input day name. If the day is
+                        Monday, Tuesday, Wednesday, Thursday or Friday, then show
+                        “It’s a week day”. If the day is Saturday then show “It’s
+                        weekend”. If the day is Sunday then show “Yay! It’s a holiday”.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                        var weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];<br/>
+                                        var user = prompt("Please enter a day");<br/>
+                                        if (user === "Sunday"){<br/>
+                                            alert("Yay! It’s a holiday");<br/>
+                                        }else if (user === "Saturday"){<br/>
+                                            alert ("It’s weekend")<br/>
+                                        }else {<br/>
+                                            alert ("It’s a week day");<br/>
+                                        }<br/>
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.19:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that takes input user’s score, if it’s greater
+                        than 50, say “You are passed”. Otherwise, show “Try again!”</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                        var score = prompt("Please enter your score", "Score");<br/>
+                                        if (score > 50){<br/>
+                                            alert("Congratulation! You are Passed");<br/>
+                                        }else {<br/>
+                                            alert ("Sorry! Try again");<br/>
+                                        }<br/>
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+         <section>
+            <div class="class" id="feedback">
+                <h3>Q.20:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that:
+                        <ol>
+                            <li>takes 2 numbers</li>
+                            <li>tells whichever number is the greater (higher) number</li>
+                            <li>tells if they are equal</li>
+                        </ol>
+                        Show the output to make sure it works (e.g. "The greater
+                        number of 5 and 10 is 10.").</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                        var score = prompt("Please enter your score", "Score");<br/>
+                                        if (score > 50){<br/>
+                                            alert("Congratulation! You are Passed");<br/>
+                                        }else {<br/>
+                                            alert ("Sorry! Try again");<br/>
+                                        }<br/>
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.21:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p><b>The Translator:</b><br/>
+                            Write a program that:
+                            <ul>
+                                <li>takes 1 input, a language code (e.g. "es", "de", "en")</li>
+                                <li>tells "Hello, World" for the given language, for atleast 3
+                                languages. It should default to returning English.</li>
+                            </ul>
+                            (Hint: use translate.google.com to check the translation of
+                            hello world in different languages)</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var userInput = prompt("Please enter a language code");<br/>
+                                                    if(userInput === "en"){<br/>
+                                                        alert("Hello World");<br/>
+                                                    }else if (userInput === "sp"){<br/>
+                                                        alert("Hola Mundo");<br/>
+                                                    }else if (userInput === "indo"){<br/>
+                                                        alert("Halo Dunia");<br/>
+                                                    }else{<br/>
+                                                        alert("Your given language code not in list");<br/>
+                                                    }<br/>          
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+</body>
+</html>

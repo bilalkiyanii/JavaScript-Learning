@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images/b38.png);
+    background-repeat: repeat;
+    background-repeat: cover;
+}
+.header-box{
+    background-color: rgba(90, 40, 123, 0.3);
+    position: relative;
+}
+blockquote{
+    border: none !important;
+    margin-left: 5px !important;
+}
+.heading{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 2.8em;
+    font-weight: bold;
+    text-shadow: 2px 3px 3px gray;
+    transform: scaleX(2);
+    transform: scaleY(1.8);
+    letter-spacing: 0.1em;
+    line-height: 50px;
+}
+.heading1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+    text-shadow: 1px 3px 4px gray;
+    transform: scaleX(1.5);
+    transform: scaleY(1.2);
+    letter-spacing: 0.1em;
+    line-height: 50px;
+}
+.box-0{
+    position: relative;
+    top: 30px;
+}
+.box-1 p{
+    color: black;
+    font-size: 1.1em;
+}
+.ans{
+    color: blue;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    line-height: 25px;
+}
+.up-button{
+    position: fixed !important;
+    top: 85% ;
+    left: 90%;
+    width: 50px;
+    height: auto;
+    /*border: 2px solid red;*/
+    border-radius: 50%;
+}
+.up-button a{
+    color: gray;
+    font-size: 5vw;
+
+}
+.up-button a:hover{
+    color: blue;
+    transition: 0.5s;
+    text-shadow: 1px 3px 6px gray, -1px -3px 6px gray;
+}
+.big-code{
+    /*border: 1px solid red;*/
+    font-size: 0.8em;
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <meta charset="UTF-8">
+    <title>Local storage</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!--<script src="dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">-->
+</head>
+<body>
+    <div class="container-flex navbar header-box col-md-12 text-center">
+        <h2 class="heading">JavaScript</h2>
+        <h2 class="heading1" id="top">Important Questions & Answers</h2>
+    </div>
+    <!--<div class="col-md-12 up-button">
+        <a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    </div>-->
+    <div class="container">
+        <div class="col-md-12">
+            <ul>
+                <li><a href="index.html">1</a></li>
+                <li><a href="numbers.html">2</a></li>
+                <li><a href="legal & illegal.html">3</a></li>
+                <li><a href="math.html">4</a></li>
+                <li><a href="prompt.html">5</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container box-0">
+        <div class="col-md-12 text-center">
+            <h2>Math Expressions</h2>
+        </div>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.1:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that take two numbers & add them in a new
+                        variable. Show the result in your browser.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">var a = +prompt("Please Enter any number..!","1st");<br/>
+                                                    var b = +prompt("Please Enter any number..!","2nd");<br/>
+                                                    var result = a + b;<br/>
+                                                    alert("Sum of " + a + " and " + b + " is: "+ result);
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>   
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.2:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Repeat task1 for subtraction, multiplication, division & modulus.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var reslSub = a - b;<br/>
+                                                    var reslMul = a * b;<br/>
+                                                    var reslDiv = a / b;<br/>
+                                                    var reslMod = a % b;<br/>
+                                                    alert("Subtaction of " + a + " and " + b + " is: " + reslSub + "\n"  
+                                                    + "Multiplication of " + a + " and " + b + " is: " + reslMul + "\n" 
+                                                    + "Dividing of " + a + " and " + b + " is: "+ reslDiv + "\n" 
+                                                    + "Modulus of " + a + " and " + b + " is: "+ reslMod);
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+         <section>
+            <div class="class" id="feedback">
+                <h3>Q.3:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Do the following using JS Mathematic Expressions</p>
+                        <ol>
+                            <li>Declare a variable.</li>
+                            <li>Show the value of variable in your browser like “Value
+                                after variable declaration is: ??”.</li>
+                            <li>Initialize the variable with some number.</li>
+                            <li>Show the value of variable in your browser like “Initial value: 3”.</li>
+                            <li>Increment the variable.</li>
+                            <li>Show the value of variable in your browser like “Value after increment is: 4”.</li>
+                            <li>Add 7 to the variable.</li>
+                            <li>Show the value of variable in your browser like “Value after addition is: 11”.</li>
+                            <li>Decrement the variable.</li>
+                            <li>Show the value of variable in your browser like “Value after decrement is: 10”.</li>
+                            <li>Show the remainder after dividing the variable’s value by
+                                3. Output : “The remainder is : 1”</li>
+                        </ol>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">var decVari;
+                                                document.write("Value after variable declaration is: "+ "decVari"");<br/>
+                                                decVari = 3;<br/>
+                                                document.write("Initial value: "+ decVari);<br/>
+                                                decVari = ++decVari;<br/>
+                                                document.write("Value after increment is: "+ decVari);<br/>
+                                                decVari = decVari + 7;<br/>
+                                                document.write("Value after addition is: "+ decVari);<br/>
+                                                decVari = --decVari;<br/>
+                                                document.write("Value after decrement is: "+ decVari);<br/>
+                                                decVari= decVari % 3;<br/>
+                                                document.write("The remainder is : "+ decVari);
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+         <section>
+            <div class="class" id="feedback">
+                <h3>Q.4:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Cost of one movie ticket is 600 PKR. Write a script to store
+                        ticket price in a variable & calculate the cost of buying 5 tickets
+                        to a movie. Example output:</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">var ticket = +prompt("One Ticket Price is 600 PKR For a Movie. \n How many you have..? ","Number");<br/>
+                        var total = 600 * ticket;<br/>
+                        document.write("Total cost to buy " +ticket+" ticket to a movie is: "+ total +" PKR");
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>                 
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.5:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a script to display multiplication table of any number in your browser. E.g.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">var table = +prompt("Which number would you like to Multiplayer..!","Number");<br/>
+                                                    for(var i = 1; i <= 10; i++){<br/>
+                                                    var a = table * i;<br/>
+                                                    document.write(table +" x "+ i +" = " +a);<br/>
+                                                    }
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.6:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p><strong> Temperature Converter:</strong> It’s hot out! Let’s make a converter based on the steps here.
+                        <ol>
+                            <li>Store a Celsius temperature into a variable.</li>
+                            <li>Convert it to Fahrenheit & output “NNoC is NNoF”.</li>
+                            <li>Now store a Fahrenheit temperature into a variable.</li>
+                            <li>Convert it to Celsius & output “NNoF is NNoC”.</li>
+                        </ol>
+                        </p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">var temCelsius = +prompt("Please Enter Celsius Temprature: ","Number");<br/>
+                                                    var temInFahrenheit = (temCelsius * 9/5) + 32;<br/>
+                                                    document.write(temCelsius+ " &#8451; " +" is " +temInFahrenheit+ " &#8457; ");<br/>
+                                                    <br/>
+                                                    var temFahrenheit = +prompt("Please Enter Fahrenheit Temprature: ","Number");<br/>
+                                                    var temInCelsius = (temFahrenheit - 32) * 5/9;<br/>
+                                                    document.write(temFahrenheit+ " &#8457; " +" is " +temInCelsius+ " &#8451; ");
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>                
+         <section>
+            <div class="class" id="feedback">
+                <h3>Q.7:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to implement checkout process of a shopping
+                        cart system for an e-commerce website. Store the following in variables
+                        <ol>
+                            <li>Price of item 1</li>
+                            <li>Price of item 2</li>
+                            <li>Ordered quantity of item 1</li>
+                            <li>Ordered Quantity of item 2</li>
+                            <li>Shipping charges</li>
+                        </ol>
+                        Compute the total cost & show the receipt in your browser.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">
+                                <ol>
+                                    <li>T-Shirt Price: Rs.400</li>
+                                    <li>Jeans Price: Rs.1000</li>
+                                    <li>Kurta Price: Rs.800</li>
+                                    <li>Dress Pent Price: 1500</li>
+                                    <li>Coat Price: Rs.2500</li>
+                                </ol>
+                              <div class="col-md-12 col-md-offset-1">
+                                  <button type="submit" class="btn btn-success" onclick="shop()">Click Me</button> 
+                              </div>
+                        </div>
+                    </blockquote>
+                     
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.8:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a script to take total marks & marks obtained by a
+                        student. Compute the percentage & show the result in your browser.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans big-code">
+                            function markSheet(){<br/>
+                                    user = +prompt("Please Enter Total Marks","100");<br/>
+                                    obt = +prompt("Please Enter Your Obtaining Marks","Obtain");<br/>
+                                    
+                                    if(obt < user && obt >= 90){<br/>
+                                        perc = (obt * 100) / 100;<br/>
+                                        alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is A-One");<br/>
+                                    }<br/>
+                                    else if(obt < user && obt >= 80){<br/>
+                                        perc = (obt * 100) / 100;<br/>
+                                        alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is A");<br/>
+                                    }<br/>
+                                    else if(obt <= 100 && obt >= 70){<br/>
+                                        perc = (obt * 100) / 100;<br/>
+                                        alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is B");<br/>
+                                    }<br/>
+                                    else if(obt <= 100 && obt >= 60){<br/>
+                                        perc = (obt * 100) / 100;<br/>
+                                        alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is C");<br/>
+                                    }<br/>
+                                    else if(obt <= 100 && obt >= 50){<br/>
+                                        perc = (obt * 100) / 100;<br/>
+                                        alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is D");<br/>
+                                    }<br/>
+                                    else if(obt <= 100 && obt >= 40){<br/>
+                                        perc = (obt * 100) / 100;<br/>
+                                        alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is E");<br/>
+                                    }<br/>
+                                    else if(obt <= 100 && obt >= 30){<br/>
+                                        perc = (obt * 100) / 100;<br/>
+                                        alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is F");<br/>
+                                    }<br/>
+                                    else{<br/>
+                                        perc = (obt * 100) / 100;<br/>
+                                        alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Fail");<br/>
+                                    }<br/>
+                                }<br/>
+
+                            <div class="col-md-12 col-md-offset-1">
+                                  <button type="submit" class="btn btn-success" onclick="markSheet()">Click Me</button> 
+                              </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.9:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Assume we have 10 US dollars & 25 Saudi Riyals. Write a script
+                        to convert the total currency to Pakistani Rupees. Perform all
+                        calculations in a single expression.<br/>
+                        (Exchange rates : 1 US Dollar = 104 Pakistani Rupee and
+                        1 Saudi Riyal = 28 Pakistani Rupee)</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">
+                                    var dollar = 10;<br/>
+                                    var riyal = 25;<br/>
+                                    var pk = dollar * 104;<br/>
+                                    var rk = riyal * 28;<br/>
+                                    var pkCurrency = pk + rk;<br/>
+                                    alert("Total currency in PKR is " + pkCurrency);<br/>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.10:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to initialize a variable with some number
+                        and do arithmetic in following sequence:<br/>
+                        a. Add 5<br/>
+                        b. Multiply by 10<br/>
+                        c. Divide the result by 2<br/>
+                        Perform all calculations in a single expression.</p>
+                       <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var num = 5;<br/>
+                                                    num = ((num + 5) * 10) / 2;<br/>
+                                                    alert(num);<br/>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.11:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p><strong> Age Calculator: </strong> Forgot how old someone is? Calculateit! <br/>
+                        a. Store the current year in a variable.<br/>
+                        b. Store their birth year in a variable.<br/>
+                        c. Calculate their 2 possible ages based on the stored values.<br/>
+                        Output them to the screen like so: “They are either NN or NN years old”.</p>
+                       <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var currentYear = 2017; <br/>
+                                                    var preYear = 2016;<br/>
+                                                    var birthYear = 1992;<br/>
+                                                    var age = preYear - birthYear; <br/>
+                                                    var age2 = currentYear - birthYear; <br/>
+                                                    alert("They are either " + age + " or " + age2 + " years old"); <br/>
+                       </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+         <section>
+            <div class="class" id="feedback">
+                <h3>Q.12:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p><strong>The Geometrizer:</strong> Calculate properties of a circle. <br/>
+                            a. Store a radius into a variable.<br/>
+                            b. Calculate the circumference based on the radius, and
+                                output “The circumference is NN”.<br/>
+                                (Hint : Circumference of a circle = 2 π r , π = 3.142)<br/>
+                                Calculate the area based on the radius, and output “The area isNN”.<br/> 
+                                (Hint : Area of a circle = π r2, π = 3.142)</p>
+                       <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-7 ans"> 
+                            <h3><strong> The Geometrizer </strong> </h3>
+                                                    var r = 12;<br/>
+                                                    var pie = 3.142;<br/>
+                                                    var circumferenceOfCircle = (2 * r) * pie;<br/>
+                                                    var area = pie * (r * r);<br/>
+                                                    document.write(r);<br/>
+                                                    document.write(circumferenceOfCircle);<br/>
+                                                    document.write(area); <br/>
+                       </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.13:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to take a number in a variable, do the
+                        required arithmetic to display the following result in your browser:</p>
+                       <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                    <h3> Result </h3><br/>
+                                    var a = 10;<br/>
+                                    document.write("The Value of a is " + a);<br/>
+                                    var a = ++a;<br/>
+                                    document.write("The value of ++a is " + a);<br/>
+                                    document.write("Now the value of a is " + a);<br/>
+                                    var a = a++;<br/>
+                                    document.write("The value of a++ is " + a);<br/>
+                                    a++;<bodyr/>
+                                    document.write("Now the value of a is " + a);<br/>
+                                    var a = --a;<br/>
+                                    document.write("The value of --a is " + a);<br/>
+                                    document.write("Now the value of a is " + a);<br/>
+                                    var a = a--;<br/>
+                                    document.write("The value of a-- is " + a);<br/>
+                                    a--;<br/>
+                                    document.write("Now the value of a is " + a);<br/>
+                       </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.14:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>What will be the output in variables a, b & result after
+                        execution of the following script:<br/>
+                        var a = 2, b = 1;<br/>
+                        var result = --a - --b + ++b + b--;<br/>
+                        Explain the output at each stage:<br/>
+                        --a;<br/>
+                        --a - --b;<br/>
+                        --a - --b + ++b;<br/>
+                        --a - --b + ++b + b--;</p>
+                       <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                            function ab(){<br/>
+                            var a = 2, b = 1;<br/>
+                            document.write( --a );<br/>
+                            document.write(--a - --b); <br/>
+                            document.write(--a - --b + ++b); <br/>
+                            document.write(--a - --b + ++b + b--);<br/>
+                            var dumy_a = 2; <br/>
+                            var dumy_b = 1;<br/>
+                            var result = --dumy_a - --dumy_b + ++dumy_b + dumy_b--;<br/>
+                            document.write(result);<br/>
+                            }<br/>
+                        <div class="col-md-12 col-md-offset-1">
+                                  <button type="submit" class="btn btn-success" onclick="ab()">Click Me</button> 
+                              </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.15:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>The Lifetime Supply Calculator: Ever wonder how
+                        much a “lifetime supply” of your favorite snack is? Wonder no
+                        more.
+                        <ol>
+                            <li>Store your favorite snack into a variable</li>
+                            <li>Store your current age into a variable.</li>
+                            <li>Store a maximum age into a variable.</li>
+                            <li>Store an estimated amount per day (as a number).</li>
+                            <li>Calculate how many would you eat total for the rest of
+                            your life.</li>
+                        </ol>
+                    Output the result to the screen like so: “You will need NNNN to
+                        last you until the ripe old age of NN”.</p>
+                       <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                                    var snack = "Lays"; <br/>
+                                    var currentAge = 24; <br/>
+                                    var maxAge = 85;<br/>
+                                    var amountPerDay = 3;<br/>
+                                    var requiredAmount = (maxAge - currentAge) * amountPerDay;<br/>
+                                    document.write(snack);<br/>
+                                    document.write(currentAge);<br/>
+                                    document.write(maxAge);<br/>
+                                    document.write(amountPerDay);<br/>
+                                    document.write("You will need " + requiredAmount + " " + snack + " to last you untill the repid old age of " + maxAge);<br/>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>                            
+    </div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+</body>
+</html>
