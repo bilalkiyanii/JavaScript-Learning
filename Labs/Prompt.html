@@ -31,6 +31,7 @@
                 <li><a href="legal & illegal.html">3</a></li>
                 <li><a href="math.html">4</a></li>
                 <li><a href="prompt.html">5</a></li>
+                <li><a href="if-else.html">6</a></li>
             </ul>
         </div>
     </div>
@@ -205,9 +206,49 @@
             <div class="row">
                 <div class="col-md-12 box-1">
                     <blockquote>
-                        <p></p>
+                        <p>Run this script, & check whether alert message would be
+                        displayed or not. Record the outputs.
+                        
+                        </p>
                         <div class="col-md-1 ans">A: </div>
-                        <div class="col-md-10 ans"> 
+                        <div class="col-md-10 ans"> <ol class="list">
+                                                        <li>var a = 4;<br/>
+                                                        if (++a === 5){<br/>
+                                                        alert("given condition for variable a is true");<br/>
+                                                        }</li><br/>
+                                                        <li>var b = 82;<br/>
+                                                        if (b++ === 83){<br/>
+                                                        alert("given condition for variable b is true");<br/>
+                                                        }</li><br/>
+                                                        <li>var c = 12;<br/>
+                                                        if (c++ === 13){<br/>
+                                                        alert("condition 1 is true");<br/>
+                                                        }<br/>
+                                                        if (c === 13){<br/>
+                                                        alert("condition 2 is true");<br/>
+                                                        }<br/>
+                                                        if (++c < 14){<br/>
+                                                        alert("condition 3 is true");<br/>
+                                                        }<br/>
+                                                        if(c === 14){<br/>
+                                                        alert("condition 4 is true");<br/>
+                                                        }</li><br/>
+                                                        <li>var materialCost = 20000;<br/>
+                                                        var laborCost = 2000;<br/>
+                                                        var totalCost = materialCost + laborCost;<br/>
+                                                        if (totalCost === laborCost + materialCost){<br/>
+                                                        alert("The cost equals");<br/>
+                                                        }</li><br/>
+                                                        <li>if (true){<br/>
+                                                        alert("True");<br/>
+                                                        }<br/>
+                                                        if (false){<br/>
+                                                        alert("False");<br/>
+                                                        }</li><br/>
+                                                        <li>if("car" < "cat"){<br/>
+                                                        alert("car is smaller than cat");<br/>
+                                                        }</li>
+                                                    </ol>
                                             
             </div>
                     </blockquote>
@@ -596,6 +637,56 @@
                                                     }else{<br/>
                                                         alert("Your given language code not in list");<br/>
                                                     }<br/>          
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.22:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to take input a number & tell whether it’s a
+                        positive or negative number.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var num = +prompt("Please enter number", "Number");<br/>
+                                                    if(num > 0 ){<br/>
+                                                        alert("This is a positive number");<br/>
+                                                    }else{<br/>
+                                                        alert("This is a negative number");<br/>	
+                                                    }<br/>          
+                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.23:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p><b>The Pluralizer:</b><br/>
+                            Write a program that:
+                            <ul>
+                                <li>takes 2 inputs, a noun and a number.</li>
+                                <li>tells the number and pluralized form, like "5 cats" or "1 dog".</li>
+                            </ul>
+                            Run the program for a few different inputs and show the result
+                            to make sure it works.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var num = +prompt("Please enter number", "Number");<br/>
+                                                    var noun = prompt("Please enter noun", "Noun");<br/>
+                                                    if(num > 1 ){<br/>
+                                                        var plu = noun+'s';<br/>
+                                                        alert(num + " " + plu);<br/>
+                                                    }else{<br/>
+                                                        alert(num + " " + noun)<br/>	
+                                                    }
                     </div>
                     </blockquote>
                 </div>

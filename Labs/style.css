@@ -70,3 +70,6 @@ blockquote{
     /*border: 1px solid red;*/
     font-size: 0.8em;
 }
+.list{
+    list-style: lower-alpha;
+}
