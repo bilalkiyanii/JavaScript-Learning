@@ -102,3 +102,20 @@ function markSheet(){
             var result = --dumy_a - --dumy_b + ++dumy_b + dumy_b--;
             document.write(result + "<br/>");
     }
+
+function user(){    
+    var password = document.getElementById("password").value;
+
+    if (password === ""|| password === ' '){
+        var message = "Please enter password first";
+        document.getElementById("error").innerHTML=message;
+    }
+    else{
+        document.getElementById("error").innerHTML= '';
+    }
+    //  if(user === password){
+    //     alert("Correct! The password you entered matches the original password");
+    // }else {
+    //     alert("Incorrect password");
+    // }
+}

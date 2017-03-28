@@ -107,6 +107,156 @@
                     </blockquote>
                 </div>
             </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.6:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that takes a character(number or string) in a
+                        variable & checks whether the given input is a number,
+                        uppercase letter or lower case letter. (Hint: ASCII codes:-
+                        A=65, Z=90, a=97, z=122).</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">
+
+                                                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.7:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program to create a calculator for +, -, *, /, % using
+                        switch case statements. (number1, number2 and operator will be input)</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> var num1 = +prompt("Please enter a number", "1st Number");<br/>
+                                                    var num2 = +prompt("Please enter a number", "2nd Number");<br/>
+                                                    var operator = prompt("Please enter a operator", "Operator");<br/>
+                                                    var result;<br/>
+                                                    switch(operator){<br/>
+                                                        case "+":<br/>
+                                                            result = (num1 + num2);<br/>
+                                                            alert(result);<br/>
+                                                            break;<br/>
+                                                        case "-":<br/>
+                                                            result = (num1 - num2);<br/>
+                                                            alert(result);<br/>
+                                                            break;<br/>
+                                                        case "*":<br/>
+                                                            result = (num1 * num2);<br/>
+                                                            alert(result);<br/>
+                                                            break;<br/>
+                                                        case "/":<br/>
+                                                            result = (num1 / num2);<br/>
+                                                            alert(result);<br/>
+                                                            break;<br/>
+                                                        case "%":<br/>
+                                                            result = (num1 % num2);<br/>
+                                                            alert(result);<br/>
+                                                            break;<br/>
+                                                        default:<br/>
+                                                            alert("Please the following opeartors '+, -, *, /, %' ");<br/>
+                                                    }</div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.8:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that takes time as input from user in 24 hours
+                        clock format like: 1900 = 7pm. Implement the following case
+                        using if, else & else if statements</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">var user = prompt("Please enter a time", "Time");<br/>
+                                                    if (user >= 00 && user < 12){<br/>
+                                                        alert("Good Morning Dear ...!")<br/>
+                                                    }else if (user >=12 && user < 17){<br/>
+                                                        alert("Good Afternoon Dear ...!");<br/>
+                                                    }else if (user >= 17 && user < 21){<br/>
+                                                        alert("Good Evening Dear ...!");<br/>
+                                                    }else {<br/>
+                                                        alert("Good Night Dear ...!");<br/>
+                                                    }
+
+                                                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.9:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that takes a calendar year in YYYY format in
+                        a variable. Check & notify the user whether it is a leap year or not.</p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans">var user = prompt("Please enter a time", "Time");<br/>
+                                                    if (user >= 00 && user < 12){<br/>
+                                                        alert("Good Morning Dear ...!")<br/>
+                                                    }else if (user >=12 && user < 17){<br/>
+                                                        alert("Good Afternoon Dear ...!");<br/>
+                                                    }else if (user >= 17 && user < 21){<br/>
+                                                        alert("Good Evening Dear ...!");<br/>
+                                                    }else {<br/>
+                                                        alert("Good Night Dear ...!");<br/>
+                                                    }
+
+                                                    </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="class" id="feedback">
+                <h3>Q.10:</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 box-1">
+                    <blockquote>
+                        <p>Write a program that
+                        <ol class="list">
+                            <li>Store correct password in a JS variable.</li>
+                            <li>Asks user to enter his/her password</li>
+                            <li>Validate the two passwords:
+                                <ul>
+                                    <li>Check if user has entered password. If not, then give
+                                    message “ Please enter your password”</li>
+                                    <li>Check if both passwords are same. If they are same,
+                                    show message “Correct! The password you entered
+                                    matches the original password”. Show “Incorrect
+                                    password” otherwise.</li>
+                                </ul>
+                            </li>    
+                        </ol>
+                    </p>
+                        <div class="col-md-1 ans">A: </div>
+                        <div class="col-md-10 ans"> 
+                            <span id="error"></span>
+                            <input type="password" id="password">
+                            <span>
+                            <button class="btn btn-success" onClick="user()">Click me</button>
+                        </span>
+
+                                                    </div>
+                    </blockquote>
+                </div>
+            </div>
         </section>                                 
     </div>
 
@@ -114,5 +264,6 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="./app.js"></script>
 </body>
 </html>
