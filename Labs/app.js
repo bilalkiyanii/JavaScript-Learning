@@ -104,18 +104,16 @@ function markSheet(){
     }
 
 function user(){    
-    var password = document.getElementById("password").value;
-
-    if (password === ""|| password === ' '){
+    var pwd = document.getElementById("pwd").value;
+    var rpwd = document.getElementById("rpwd").value;
+    if (pwd === ""|| pwd === ' ' && rpwd === ""|| rpwd === ' '){
         var message = "Please enter password first";
         document.getElementById("error").innerHTML=message;
     }
-    else{
-        document.getElementById("error").innerHTML= '';
+    else if(pwd === rpwd){
+        alert("Correct! The password you entered matches the original password");
     }
-    //  if(user === password){
-    //     alert("Correct! The password you entered matches the original password");
-    // }else {
-    //     alert("Incorrect password");
-    // }
+    else {
+        alert("Incorrect password");
+    }
 }

@@ -73,3 +73,6 @@ blockquote{
 .list{
     list-style: lower-alpha;
 }
+.bracket{
+    color: red;
+}
