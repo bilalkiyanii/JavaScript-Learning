@@ -1,119 +1,133 @@
 
-var shoping =["tshirt","jeans","kurta","dress pent","coat"];
+var shoping = ["tshirt", "jeans", "kurta", "dress pent", "coat"];
 
 var user;
 var qty;
 
-var total, shipping=150;
+var total, shipping = 150;
 
 
 
-function shop(){
-    user = prompt("Please write your Product","Product");
-    qty = +prompt("Please write your Quantity","Quantity");
+function shop() {
+    user = prompt("Please write your Product", "Product");
+    qty = +prompt("Please write your Quantity", "Quantity");
     user = user.toLowerCase();
-    var flag ="no";
-    for(var i = 0; i< shoping.length; i++){
+    var flag = "no";
+    for (var i = 0; i < shoping.length; i++) {
         //console.log(shoping[i]);
-        if(user === shoping[i]){
-            if(user === "tshirt"){
-                flag="yes";
+        if (user === shoping[i]) {
+            if (user === "tshirt") {
+                flag = "yes";
                 total = qty * 400;
-                total = total+shipping;
-                alert("your Product is " + user +"\n"+ "Your Product Quantity is " + qty +"\n"+"Shipping Charges Rs."+shipping+"\n"+"Total Price Rs." + total);
+                total = total + shipping;
+                alert("your Product is " + user + "\n" + "Your Product Quantity is " + qty + "\n" + "Shipping Charges Rs." + shipping + "\n" + "Total Price Rs." + total);
             }
-            else if(user === "jeans"){
-                flag="yes";
+            else if (user === "jeans") {
+                flag = "yes";
                 total = qty * 1000;
-                total = total+shipping;
-                alert("your Product is " + user +"\n"+ "Your Product Quantity is " + qty +"\n"+"Shipping Charges Rs."+shipping+"\n"+"Total Price Rs." + total);
+                total = total + shipping;
+                alert("your Product is " + user + "\n" + "Your Product Quantity is " + qty + "\n" + "Shipping Charges Rs." + shipping + "\n" + "Total Price Rs." + total);
             }
-            else if(user === "kurta"){
-                flag="yes";
+            else if (user === "kurta") {
+                flag = "yes";
                 total = qty * 800;
-                total = total+shipping;
-                alert("your Product is " + user +"\n"+ "Your Product Quantity is " + qty +"\n"+"Shipping Charges Rs."+shipping+"\n"+"Total Price Rs." + total);
+                total = total + shipping;
+                alert("your Product is " + user + "\n" + "Your Product Quantity is " + qty + "\n" + "Shipping Charges Rs." + shipping + "\n" + "Total Price Rs." + total);
             }
-            else if(user === "dress pent"){
-                flag="yes";
+            else if (user === "dress pent") {
+                flag = "yes";
                 total = qty * 1500;
-                total = total+shipping;
-                alert("your Product is " + user +"\n"+ "Your Product Quantity is " + qty +"\n"+"Shipping Charges Rs."+shipping+"\n"+"Total Price Rs." + total);
+                total = total + shipping;
+                alert("your Product is " + user + "\n" + "Your Product Quantity is " + qty + "\n" + "Shipping Charges Rs." + shipping + "\n" + "Total Price Rs." + total);
             }
-            else if(user === "coat"){
-                flag="yes";
+            else if (user === "coat") {
+                flag = "yes";
                 total = qty * 2500;
-                total = total+shipping;
-                alert("your Product is " + user +"\n"+ "Your Product Quantity is " + qty +"\n"+"Shipping Charges Rs."+shipping+"\n"+"Total Price Rs." + total);
+                total = total + shipping;
+                alert("your Product is " + user + "\n" + "Your Product Quantity is " + qty + "\n" + "Shipping Charges Rs." + shipping + "\n" + "Total Price Rs." + total);
             }
 
         }
     }
-    if(flag == "no"){
+    if (flag == "no") {
         alert("This Product is Not Availiable..!");
     }
 }
 
-function markSheet(){
-    user = +prompt("Please Enter Total Marks","100");
-    obt = +prompt("Please Enter Your Obtaining Marks","Obtain");
-    
-    if(obt < user && obt >= 90){
+function markSheet() {
+    user = +prompt("Please Enter Total Marks", "100");
+    obt = +prompt("Please Enter Your Obtaining Marks", "Obtain");
+
+    if (obt < user && obt >= 90) {
         perc = (obt * 100) / 100;
         alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is A-One");
     }
-    else if(obt < user && obt >= 80){
+    else if (obt < user && obt >= 80) {
         perc = (obt * 100) / 100;
         alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is A");
-     }
-    else if(obt <= 100 && obt >= 70){
+    }
+    else if (obt <= 100 && obt >= 70) {
         perc = (obt * 100) / 100;
         alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is B");
     }
-    else if(obt <= 100 && obt >= 60){
+    else if (obt <= 100 && obt >= 60) {
         perc = (obt * 100) / 100;
         alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is C");
     }
-    else if(obt <= 100 && obt >= 50){
+    else if (obt <= 100 && obt >= 50) {
         perc = (obt * 100) / 100;
         alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is D");
     }
-    else if(obt <= 100 && obt >= 40){
+    else if (obt <= 100 && obt >= 40) {
         perc = (obt * 100) / 100;
         alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is E");
     }
-    else if(obt <= 100 && obt >= 30){
+    else if (obt <= 100 && obt >= 30) {
         perc = (obt * 100) / 100;
         alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Your Grade is F");
     }
-     else{
+    else {
         perc = (obt * 100) / 100;
         alert("Total Marks " + user + "\n" + "Your Obtaining Marks is " + obt + "\n" + "Your Percentage is " + perc + "%" + "\n" + "Fail");
     }
 }
-    function ab(){
-            var a = 2, b = 1;
-            document.write( --a + "<br/>");
-            document.write(--a - --b + "<br/>");
-            document.write(--a - --b + ++b + "<br/>");
-            document.write(--a - --b + ++b + b-- + "<br/>");
-            var dumy_a = 2; 
-            var dumy_b = 1;
-            var result = --dumy_a - --dumy_b + ++dumy_b + dumy_b--;
-            document.write(result + "<br/>");
-    }
+function ab() {
+    var a = 2, b = 1;
+    document.write(--a + "<br/>");
+    document.write(--a - --b + "<br/>");
+    document.write(--a - --b + ++b + "<br/>");
+    document.write(--a - --b + ++b + b-- + "<br/>");
+    var dumy_a = 2;
+    var dumy_b = 1;
+    var result = --dumy_a - --dumy_b + ++dumy_b + dumy_b--;
+    document.write(result + "<br/>");
+}
 
-function user(){    
+function user() {
     var pwd = document.getElementById("pwd").value;
     var rpwd = document.getElementById("rpwd").value;
-    if (pwd === ""|| pwd === ' ' && rpwd === ""|| rpwd === ' '){
+    if (pwd === "" || pwd === ' ' && rpwd === "" || rpwd === ' ') {
         var message = "Please enter password first";
-        document.getElementById("error").innerHTML=message;
+        document.getElementById("error").innerHTML = message;
     }
-    else if(pwd === rpwd){
+    else if (pwd === rpwd) {
         alert("Correct! The password you entered matches the original password");
     }
     else {
         alert("Incorrect password");
+    }
+}
+function fn() {
+    var users = prompt("Please enter your text or number");
+    var tru = 'true';
+    var fal = 'false';
+    if (users === tru || users === fal) {
+        alert(users + " is a Boolean");
+    } else if ( isNaN(users)) {
+        alert(users + " is a string");
+    } else if ( users/1) {
+        alert(users + " is a number");
+    } else {
+        alert("undefine");
     }
 }
