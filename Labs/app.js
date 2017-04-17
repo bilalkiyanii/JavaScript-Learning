@@ -123,11 +123,35 @@ function fn() {
     var fal = 'false';
     if (users === tru || users === fal) {
         alert(users + " is a Boolean");
-    } else if ( isNaN(users)) {
+    } else if (isNaN(users)) {
         alert(users + " is a string");
-    } else if ( users/1) {
+    } else if (users / 1) {
         alert(users + " is a number");
     } else {
         alert("undefine");
     }
+}
+function fv() {
+    var flag = "no";
+    var vowels = ["a", "e", "i", "o", "u"];
+    var user = prompt("Please enter a character");
+    for (var i = 0; i <= vowels.length; i++) {
+        if (vowels[i] === user) {
+            flag = "yes";
+            alert("true");
+        }
+         
+    }
+    if(flag === 'no'){
+        alert("false");
+    }
+}
+function comp(){
+    document.getElementById("operator").innerHTML = 10 != 8;
+}
+function userAge() {
+    var age, voteable;
+    age = document.getElementById("age").value;
+    voteable = (age < 18) ? "Too young":"Old enough";
+    document.getElementById("result").innerHTML = voteable + " to vote.";
 }
